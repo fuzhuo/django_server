@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from . import view
+from . import pcs
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^hello$', view.hello),
+    url(r'^pcs_rsa$', pcs.pcs_rsa),
+    url(r'^pcs_sign2$', pcs.pcs_sign2),
 ]

@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOWED_HOSTS	../server/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+AUTH_PASSWORD_VALIDATORS	../server/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:87
+BASE_DIR	../server/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+DATABASES	../server/settings.py	/^DATABASES = {$/;"	kind:variable	line:76
+DEBUG	../server/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+HttpResponse	../server/view.py	/^from django.http import HttpResponse$/;"	kind:namespace	line:2
+INSTALLED_APPS	../server/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+LANGUAGE_CODE	../server/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:106
+MIDDLEWARE	../server/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:42
+ROOT_URLCONF	../server/settings.py	/^ROOT_URLCONF = 'server.urls'$/;"	kind:variable	line:52
+STATIC_URL	../server/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:120
+TEMPLATES	../server/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:54
+TIME_ZONE	../server/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:108
+USE_I18N	../server/settings.py	/^USE_I18N = True$/;"	kind:variable	line:110
+USE_L10N	../server/settings.py	/^USE_L10N = True$/;"	kind:variable	line:112
+USE_TZ	../server/settings.py	/^USE_TZ = True$/;"	kind:variable	line:114
+WSGI_APPLICATION	../server/settings.py	/^WSGI_APPLICATION = 'server.wsgi.application'$/;"	kind:variable	line:70
+__init__.py	../server/__init__.py	1;"	kind:file	line:1
+admin	../server/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+application	../server/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+csrf_exempt	../server/view.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	kind:namespace	line:1
+django	../manage.py	/^            import django$/;"	kind:namespace	line:14
+execute_from_command_line	../manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+get_wsgi_application	../server/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+hello	../server/view.py	/^def hello(request):$/;"	kind:function	line:5
+manage.py	../manage.py	1;"	kind:file	line:1
+os	../manage.py	/^import os$/;"	kind:namespace	line:2
+os	../server/settings.py	/^import os$/;"	kind:namespace	line:13
+os	../server/wsgi.py	/^import os$/;"	kind:namespace	line:10
+settings.py	../server/settings.py	1;"	kind:file	line:1
+sys	../manage.py	/^import sys$/;"	kind:namespace	line:3
+url	../server/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:16
+urlpatterns	../server/urls.py	/^urlpatterns = [$/;"	kind:variable	line:20
+urls.py	../server/urls.py	1;"	kind:file	line:1
+view	../server/urls.py	/^from . import view$/;"	kind:namespace	line:18
+view.py	../server/view.py	1;"	kind:file	line:1
+wsgi.py	../server/wsgi.py	1;"	kind:file	line:1
