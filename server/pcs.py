@@ -8,8 +8,8 @@ import base64
 @csrf_exempt
 def pcs_rsa(request):
     if request.method=="POST":
-        print("body is " + request.body)
-        jdata=parse.urlparse.parse_qs(request.body);
+        print("body is " + str(request.body));
+        jdata=parse.urlparse.parse_qs(str(request.body));
         pubkey=jdata["pubkey"][0]
         password=jdata["password"][0]
         print("pubkey %s password %s"%(pubkey, password))
