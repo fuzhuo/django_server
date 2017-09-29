@@ -1,6 +1,6 @@
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
-import urlparse
+from urllib import parse
 import json
 import rsa
 import base64
@@ -9,7 +9,7 @@ import base64
 def pcs_rsa(request):
     if request.method=="POST":
         print("body is " + request.body)
-        jdata=urlparse.parse_qs(request.body);
+        jdata=parse.urlparse.parse_qs(request.body);
         pubkey=jdata["pubkey"][0]
         password=jdata["password"][0]
         print("pubkey %s password %s"%(pubkey, password))
