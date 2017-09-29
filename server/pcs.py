@@ -9,7 +9,7 @@ import base64
 def pcs_rsa(request):
     if request.method=="POST":
         print("body is " + str(request.body));
-        jdata=parse.urlparse.parse_qs(str(request.body));
+        jdata=parse.parse_qs(str(request.body));
         pubkey=jdata["pubkey"][0]
         password=jdata["password"][0]
         print("pubkey %s password %s"%(pubkey, password))
