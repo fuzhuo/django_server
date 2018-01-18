@@ -15,7 +15,8 @@ def pcs_rsa(request):
         print("pubkey %s password %s"%(pubkey, password))
         key=rsa.PublicKey.load_pkcs1_openssl_pem(pubkey)
         password_rsaed=base64.b64encode(rsa.encrypt(password.encode('utf-8'), key))
-        output={"success":True, "password_rsaed": password_rsaed}
+        print("password rsaed %s"%(password_rsaed))
+        output={"success":True, "password_rsaed": password_rsaed.decode('utf-8')}
         return HttpResponse(json.dumps(output))
     else:
         output={"success":False}
@@ -51,6 +52,7 @@ def sign2_func(j, r):
 
     return base64.b64encode(o)
 
+@csrf_exempt
 def pcs_sign2(request):
     sign3=request.GET["sign3"]
     sign1=request.GET["sign1"]

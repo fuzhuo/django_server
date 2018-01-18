@@ -25,7 +25,7 @@ SECRET_KEY = 'wq=a(_e_bt7lj=fotqp!&b^2sj@6@km9f_=eaa(1hd+daw56fc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["lazycat.fuzhuo.me"]
 
 
 # Application definition
